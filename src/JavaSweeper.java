@@ -20,7 +20,8 @@ public class JavaSweeper extends JFrame {
     }
 
     private JavaSweeper() {
-        game = new Game(COLS, ROWS);
+        int BOMBS = 10;
+        game = new Game(COLS, ROWS, BOMBS);
         game.start();
         setImages();
         initPanel();
